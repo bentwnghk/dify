@@ -186,8 +186,6 @@ const ChatWrapper = () => {
     const welcomeMessage = chatList.find(item => item.isOpeningStatement)
     if (respondingState)
       return null
-    if (isHistoryConversation)
-      return null
     if (!welcomeMessage)
       return null
     if (!collapsed && inputsForms.length > 0 && !allInputsHidden)
@@ -227,7 +225,7 @@ const ChatWrapper = () => {
         </div>
       </div>
     )
-  }, [appData?.site.icon, appData?.site.icon_background, appData?.site.icon_type, appData?.site.icon_url, chatList, collapsed, isHistoryConversation, inputsForms.length, respondingState, allInputsHidden])
+  }, [appData?.site.icon, appData?.site.icon_background, appData?.site.icon_type, appData?.site.icon_url, chatList, collapsed, inputsForms.length, respondingState, allInputsHidden])
 
   const answerIcon = (appData?.site && appData.site.use_icon_as_answer_icon)
     ? <AnswerIcon
