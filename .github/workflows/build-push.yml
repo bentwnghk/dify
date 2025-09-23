@@ -20,7 +20,7 @@ env:
 
 jobs:
   build:
-    runs-on: ${{ matrix.platform == 'linux/amd64' && 'amd64_runner' || 'ubuntu-latest' }}
+    runs-on: ${{ matrix.platform == 'linux/arm64' && 'arm64_runner' || 'ubuntu-latest' }}
     if: github.repository == 'bentwnghk/dify'
     strategy:
       matrix:
