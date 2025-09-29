@@ -4,6 +4,11 @@ on:
   push:
     branches:
       - "main"
+      - "deploy/dev"
+      - "deploy/enterprise"
+      - "build/**"
+      - "release/e-*"
+      - "hotfix/**"
     tags:
       - "*"
   workflow_dispatch:
