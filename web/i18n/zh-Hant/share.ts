@@ -29,7 +29,7 @@ const translation = {
     expand: '展開',
     collapse: '摺疊',
     newChatTip: '已經在一個新聊天中',
-    chatSettingsTitle: '新的聊天設置',
+    chatSettingsTitle: '輸入資料',
     chatFormTip: '聊天設定在聊天開始後無法修改。',
     viewChatSettings: '查看聊天設定',
   },
