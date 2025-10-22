@@ -191,7 +191,7 @@ const ChatWrapper = () => {
     const welcomeMessage = chatList.find(item => item.isOpeningStatement)
     if (respondingState)
       return null
-    if (isHistoryConversation)
+    if (currentConversationId)
       return null
     if (!welcomeMessage)
       return null
@@ -239,7 +239,7 @@ const ChatWrapper = () => {
     appData?.site.icon_type,
     appData?.site.icon_url,
     chatList, collapsed,
-    isHistoryConversation,
+    currentConversationId,
     inputsForms.length,
     respondingState,
     allInputsHidden,
